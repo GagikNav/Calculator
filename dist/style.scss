@@ -1,4 +1,4 @@
-@import './reset';
+@import '../reset';
 body {
   display: flex;
   min-height: 100vh;
@@ -9,6 +9,10 @@ body {
   overflow: hidden;
 }
 
+html {
+  font-family: monospace, serif;
+}
+
 .container {
   position: relative;
   width: 400px;
@@ -16,6 +20,19 @@ body {
   background: #fff;
   box-shadow: #00000071 0 0 15px 1px;
   .screen {
+    .previous-screen {
+      color: #ccc;
+      text-align: right;
+      padding: 10px;
+      font-size: 1.2rem;
+      height: 50%;
+    }
+    .current-screen {
+      color: #fff;
+      text-align: right;
+      font-size: 1.8rem;
+      padding: 10px;
+    }
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
@@ -34,8 +51,9 @@ body {
       grid-column: 2 span;
     }
     .calc-btn {
-      font-size: 1.4rem;
       font-family: monospace, serif;
+
+      font-size: 1.4rem;
       padding: 25px;
       background: #5fd8d4;
       border-radius: 5px;

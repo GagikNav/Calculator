@@ -124,6 +124,10 @@ body {
   overflow: hidden;
 }
 
+html {
+  font-family: monospace, serif;
+}
+
 .container {
   position: relative;
   width: 400px;
@@ -149,6 +153,21 @@ body {
           box-shadow: #373737 inset 0 0 15px 10px;
 }
 
+.container .screen .previous-screen {
+  color: #ccc;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.2rem;
+  height: 50%;
+}
+
+.container .screen .current-screen {
+  color: #fff;
+  text-align: right;
+  font-size: 1.8rem;
+  padding: 10px;
+}
+
 .container .buttons {
   display: -ms-grid;
   display: grid;
@@ -164,8 +183,8 @@ body {
 }
 
 .container .buttons .calc-btn {
-  font-size: 1.4rem;
   font-family: monospace, serif;
+  font-size: 1.4rem;
   padding: 25px;
   background: #5fd8d4;
   border-radius: 5px;
