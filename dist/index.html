@@ -13,40 +13,38 @@
 
     <div class="container">
       <div class="screen">
-        <div class="previous-screen">123
-        </div>
-        <div class="current-screen">12300000123212
-        </div>
+        <div data-previous-screen class="previous-screen"></div>
+        <div data-current-screen class="current-screen"></div>
       </div>
       <div class="buttons" id="buttons">
-        <button class="calc-btn ac-btn span-two" id="ac">AC</button>
-        <button class="calc-btn number" id="number-btn1">DEL</button>
-        <button class="calc-btn operator " id="divide"> ÷ </button>
+        <button data-all-clear class="calc-btn ac-btn span-two" id="ac">AC</button>
+        <button data-delete class="calc-btn del" id="del">DEL</button>
+        <button data-operation class="calc-btn operator " id="divide"> ÷ </button>
 
-        <button class="calc-btn number" id="number-btn1">1</button>
-        <button class="calc-btn number" id="number-btn2">2</button>
-        <button class="calc-btn number" id="number-btn3">3</button>
-        <button class="calc-btn operator " id="multiple"> × </button>
+        <button data-number class="calc-btn number" id="number-btn1">1</button>
+        <button data-number class="calc-btn number" id="number-btn2">2</button>
+        <button data-number class="calc-btn number" id="number-btn3">3</button>
+        <button data-operation class="calc-btn operator " id="multiple"> × </button>
 
-        <button class="calc-btn number" id="number-btn4">4</button>
-        <button class="calc-btn number" id="number-btn5">5</button>
-        <button class="calc-btn number" id="number-btn6">6</button>
-        <button class="calc-btn operator " id="minus"> - </button>
+        <button data-number class="calc-btn number" id="number-btn4">4</button>
+        <button data-number class="calc-btn number" id="number-btn5">5</button>
+        <button data-number class="calc-btn number" id="number-btn6">6</button>
+        <button data-operation class="calc-btn operator " id="minus"> - </button>
 
-        <button class="calc-btn number" id="number-btn7">7</button>
-        <button class="calc-btn number" id="number-btn8">8</button>
-        <button class="calc-btn number" id="number-btn9">9</button>
-        <button class="calc-btn operator " id="plus"> + </button>
+        <button data-number class="calc-btn number" id="number-btn7">7</button>
+        <button data-number class="calc-btn number" id="number-btn8">8</button>
+        <button data-number class="calc-btn number" id="number-btn9">9</button>
+        <button data-operation class="calc-btn operator " id="plus"> + </button>
 
-        <button class="calc-btn number" id="number-btn10">0</button>
-        <button class="calc-btn dot " id="dot"> . </button>
-        <button class="calc-btn operator span-two" id="equal"> = </button>
+        <button data-number class="calc-btn number" id="number-btn10">0</button>
+        <button data-number class="calc-btn dot " id="dot"> . </button>
+        <button data-equal class="calc-btn operator span-two" id="equal"> = </button>
       </div>
     </div>
 
 
 
-    <script src="./script.js"></script>
+    <script src="./app.js"></script>
   </body>
 
 </html>
