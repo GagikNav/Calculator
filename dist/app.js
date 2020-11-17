@@ -141,6 +141,10 @@ const memoryRecallBtn = document.querySelector('[data-memory-recall]');
 const previousScreenText = document.querySelector('[data-previous-screen]');
 const currentScreenText = document.querySelector('[data-current-screen]');
 const indicatorScreenText = document.querySelector('[data-indicator-screen]');
+// const keyboard = e => {
+//   let key = e.key;
+// };
+// keyboard();
 
 // $ create Calculator
 
@@ -156,6 +160,7 @@ numberBtn.forEach(button => {
     calculator.updateScreen();
   });
 });
+
 operationBtn.forEach(button => {
   button.addEventListener('click', () => {
     calculator.handelOperation(button.innerText);

@@ -225,4 +225,10 @@ html .container .buttons .calc-btn:hover {
   transition: all 0.2s ease-in-out;
   font-size: 1.5rem;
 }
+
+@media only screen and (max-width: 400px) {
+  body {
+    overflow: visible;
+  }
+}
 /*# sourceMappingURL=style.css.map */
