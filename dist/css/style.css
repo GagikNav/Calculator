@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Squada+One&display=swap");
 *,
 *:before,
 *:after {
@@ -125,20 +126,25 @@ body {
 }
 
 html {
-  font-family: monospace, serif;
+  font-family: 'Squada One', cursive;
 }
 
 html .container {
+  padding: 5px;
   position: relative;
-  width: 400px;
-  height: 550px;
-  background: #fff;
+  width: auto;
+  height: auto;
+  max-height: 600px;
+  max-width: 315px;
+  background: #777;
   -webkit-box-shadow: #00000071 0 10px 15px 10px;
           box-shadow: #00000071 0 10px 15px 10px;
+  border-radius: 5px;
 }
 
 html .container .screen {
-  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  background: #222;
   margin-bottom: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,36 +153,46 @@ html .container .screen {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 110px;
   width: 100%;
-  height: 20%;
   word-wrap: break-word;
   word-break: break-all;
   overflow: auto;
+}
+
+html .container .screen .indicator-screen {
+  font-family: monospace, serif;
+  padding: 2px 0 0 10px;
+  font-size: 0.8rem;
+  color: #eee;
+  height: 15px;
+  background: #2f2f2f;
 }
 
 html .container .screen .previous-screen {
   color: #ccc;
   text-align: right;
   padding: 10px;
-  font-size: 1.5rem;
-  height: 50%;
+  font-size: 1.2rem;
+  min-height: 40px;
 }
 
 html .container .screen .current-screen {
   color: #fff;
   text-align: right;
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding: 10px;
 }
 
 html .container .buttons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (100px)[4];
-      grid-template-columns: repeat(4, 100px);
-  -ms-grid-rows: (auto)[5];
-      grid-template-rows: repeat(5, auto);
+  -ms-grid-columns: (75px)[4];
+      grid-template-columns: repeat(4, 75px);
+  -ms-grid-rows: (55px)[5];
+      grid-template-rows: repeat(5, 55px);
   height: 80%;
+  gap: 1px;
 }
 
 html .container .buttons .span-two {
@@ -186,7 +202,7 @@ html .container .buttons .span-two {
 html .container .buttons .calc-btn {
   font-family: monospace, serif;
   font-size: 1.4rem;
-  padding: 25px;
+  padding: 10px;
   background: #5fd8d4;
   border-radius: 5px;
   color: #000000;
@@ -201,7 +217,7 @@ html .container .buttons .calc-btn {
 }
 
 html .container .buttons .calc-btn:hover {
-  padding: 20px;
+  padding: 5px;
   background: #36cec9;
   -webkit-box-shadow: inset 0 0 25px 0 #0000008f;
           box-shadow: inset 0 0 25px 0 #0000008f;
